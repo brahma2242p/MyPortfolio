@@ -1019,12 +1019,16 @@ body.offcanvas {
         }
         
         .project .desc {
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+          opacity: 1; /* Make text always visible */
+          visibility: visible;
+          display: block;
+          background: rgba(0, 0, 0, 0.4);
         }
         
         .project:hover .desc {
             opacity: 1;
+            visibility: visible; /* Ensure it's shown */
+            display: block;
         }
         
 
